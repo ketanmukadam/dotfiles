@@ -4,4 +4,4 @@ This is a collection of all the '.' files that I use for configuring my setup. S
 
 ## License
 
-See the [LICENSE](LICENSE.md) file for license rights and limitations.
+See the [LICENSE](LICENSE.md) file for license rights and limitations on my authored code/steps.
