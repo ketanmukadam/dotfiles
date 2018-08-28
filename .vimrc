@@ -152,6 +152,10 @@ nmap <silent> ,k :cs kill 0<CR>
 nmap <silent> ,a :cs add cscope.out<CR>
 nmap <silent> <F10> :cs add $CSCOPE_DB\cscope.out $CSCOPE_DB<CR>
 
+hi ColorColumn ctermbg=235 guibg=#2c2d27
+let &colorcolumn="80,".join(range(120,999),",")
+
+
 let windows10=$WINDOWS10
 if windows10 == '0'
   set t_ku=OA 
