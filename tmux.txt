@@ -1,0 +1,62 @@
+tmux key bindings
+-----------------
+
+c-a r - reload config file
+c-a | - vertical split
+c-a - - horizantal split
+c-a < > - swapping windows
+c-a { }  - swapping panes
+resize panes - Ctrl-a Alt-Arrow keys
+full-screen - Ctrl-a z
+c-a , rename window
+c-a $ rename sesssion
+C-S-Arrow - resize panes
+Alt-Arrow - switch panes
+Shift-Arrow - switch windows
+c-a x - kill pane
+c-a & - kill window
+c-a t - clock
+
+Alt-jkhl - select panes
+c-a jkhl - select panes
+c-a b - copy mode
+'y' - copy to clipboard
+v, C-v - visual select
+C-a = - list of copy buffers
+C-a # - list copy buffers
+
+
+Window Management
+C-a prefix
+c  create window
+w  list windows
+n  next window
+p  previous window
+f  find window
+,  name window
+&  kill window
+
+swap windows - Ctrl-a < or >
+rename window - Ctrl-a ,
+switch windows - Ctrl-a [0-9] 
+rotate windows - Ctrl-a Ctrl-o
+
+C-a j - move some pane to this window
+C-a s - send a pane to another window
+
+
+copy-mode - Ctlr-a b 
+selection - v or C-v(block)
+copy - y
+clipboard copy  - Ctrl-a y
+paste - p
+
+reload tmux conf - Ctrl-a r
+
+tmux list-keys
+tmux list-commands
+tmux new -s sessionname
+tmux attach -t sessionname
+tmux switch -t sessionname
+tmux list-sessions
+tmux detach (Ctrl-a d)
