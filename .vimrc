@@ -79,6 +79,7 @@ endif
 if &term =~? 'mlterm\|xterm'
 	set t_Co=256
 endif
+set t_ut=
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -152,9 +153,8 @@ nmap <silent> ,k :cs kill 0<CR>
 nmap <silent> ,a :cs add cscope.out<CR>
 nmap <silent> <F10> :cs add $CSCOPE_DB\cscope.out $CSCOPE_DB<CR>
 
-hi ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn="80,".join(range(120,999),",")
-
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 let windows10=$WINDOWS10
 if windows10 == '0'
@@ -169,7 +169,8 @@ endif
 """"""""""""""""""""""""""""""
 map <silent> ,y :YRShow<cr>
 
-colorscheme desert
+"colorscheme koehler 
+colorscheme apprentice 
 
 augroup vimrc_autocmds
   autocmd BufEnter * highlight OverLength ctermbg=black guibg=#342342
