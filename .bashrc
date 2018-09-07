@@ -135,7 +135,7 @@ alias dir='ls --color=auto --format=vertical'
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
-
+alias tmux='tmux -2'
 # Umask
 #
 # /etc/profile sets 022, removing write perms to group + others.
